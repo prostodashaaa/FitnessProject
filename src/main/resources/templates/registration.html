@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../static/css/registration.css"/>
+  <link href="https://db.onlinewebfonts.com/c/38764ac6ef7cce3558484bb7e60b9af3?family=Bebas+Neue+Cyrillic" rel="stylesheet">
+  <link href="https://db.onlinewebfonts.com/c/4c6ae0b5133c55f46cc12ae0f2d43941?family=Bebas+Neue+Regular" rel="stylesheet">
+  <link href="https://db.onlinewebfonts.com/c/63105376024a2fbc44ff039a073cb853?family=Museo+Sans+Cyrl+W03+300" rel="stylesheet">
+  <title>Страница регистрации</title>
+</head>
+<body>
+<div class="container">
+  <div class="form">
+    <form action="#" th:action="@{/registration}" th:object="${new_user}" method="post">
+    <h2>Регистрация</h2>
+    <div class="input-box">
+      <div class = "login">
+        <span th:if="${has_already_reg}">User with such login already registered!</span>
+      </div>
+      <ion-icon name="person-outline"></ion-icon>
+      <label> Введите логин: </label>
+      <input class = "input" type="text" th:field="*{userName}" required placeholder="Введите логин..."/>
+    </div>
+    <div class="input-box">
+      <ion-icon name="lock-closed-outline"></ion-icon>
+      <label> Ввведите пароль: </label>
+      <input class = "input" type="password" th:field="*{password}" required placeholder="Введите пароль..."/> 
+    </div>
+    <div class="input-box">
+      <ion-icon name="body-outline"></ion-icon>
+      <label> Роль: </label>
+      <select name="role" id="role" th:field="*{userRole}" required>
+        <option value="USER">-- Выберите роль --</option>
+        <option value="ADMIN">ADMIN</option>
+        <option value="USER">USER</option>
+      </select>
+    </div>
+    <div class="button">
+      <input type="submit" class="btn" value="Войти"/>
+    </div>
+</form>
+</div>
+</div>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

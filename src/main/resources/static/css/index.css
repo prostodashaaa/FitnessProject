@@ -1,0 +1,251 @@
+@import url(https://db.onlinewebfonts.com/c/38764ac6ef7cce3558484bb7e60b9af3?family=Bebas+Neue+Cyrillic);
+@import url(https://db.onlinewebfonts.com/c/4c6ae0b5133c55f46cc12ae0f2d43941?family=Bebas+Neue+Regular);
+@import url(https://db.onlinewebfonts.com/c/63105376024a2fbc44ff039a073cb853?family=Museo+Sans+Cyrl+W03+300);
+
+@font-face {
+  font-family: "Bebas Neue Cyrillic";
+  src: url("https://db.onlinewebfonts.com/t/38764ac6ef7cce3558484bb7e60b9af3.eot");
+  src: url("https://db.onlinewebfonts.com/t/38764ac6ef7cce3558484bb7e60b9af3.eot?#iefix")format("embedded-opentype"),
+  url("https://db.onlinewebfonts.com/t/38764ac6ef7cce3558484bb7e60b9af3.woff2")format("woff2"),
+  url("https://db.onlinewebfonts.com/t/38764ac6ef7cce3558484bb7e60b9af3.woff")format("woff"),
+  url("https://db.onlinewebfonts.com/t/38764ac6ef7cce3558484bb7e60b9af3.ttf")format("truetype"),
+  url("https://db.onlinewebfonts.com/t/38764ac6ef7cce3558484bb7e60b9af3.svg#Bebas Neue Cyrillic")format("svg");
+}
+
+@font-face {
+  font-family: "Bebas Neue Regular";
+  src: url("https://db.onlinewebfonts.com/t/4c6ae0b5133c55f46cc12ae0f2d43941.eot");
+  src: url("https://db.onlinewebfonts.com/t/4c6ae0b5133c55f46cc12ae0f2d43941.eot?#iefix")format("embedded-opentype"),
+  url("https://db.onlinewebfonts.com/t/4c6ae0b5133c55f46cc12ae0f2d43941.woff2")format("woff2"),
+  url("https://db.onlinewebfonts.com/t/4c6ae0b5133c55f46cc12ae0f2d43941.woff")format("woff"),
+  url("https://db.onlinewebfonts.com/t/4c6ae0b5133c55f46cc12ae0f2d43941.ttf")format("truetype"),
+  url("https://db.onlinewebfonts.com/t/4c6ae0b5133c55f46cc12ae0f2d43941.svg#Bebas Neue Regular")format("svg");
+}
+
+@font-face {
+  font-family: "Museo Sans Cyrl W03 300";
+  src: url("https://db.onlinewebfonts.com/t/63105376024a2fbc44ff039a073cb853.eot");
+  src: url("https://db.onlinewebfonts.com/t/63105376024a2fbc44ff039a073cb853.eot?#iefix")format("embedded-opentype"),
+  url("https://db.onlinewebfonts.com/t/63105376024a2fbc44ff039a073cb853.woff2")format("woff2"),
+  url("https://db.onlinewebfonts.com/t/63105376024a2fbc44ff039a073cb853.woff")format("woff"),
+  url("https://db.onlinewebfonts.com/t/63105376024a2fbc44ff039a073cb853.ttf")format("truetype"),
+  url("https://db.onlinewebfonts.com/t/63105376024a2fbc44ff039a073cb853.svg#Museo Sans Cyrl W03 300")format("svg");
+}
+
+body {
+  background: #31353D;                                                                  
+  height: 100%; 
+  overflow: auto; 
+  background-size: cover;
+}
+
+blockquote {
+  font-family: "Bebas Neue Cyrillic";
+  font-size: large;
+  letter-spacing: 6px;
+  max-width: 800px;
+  color: #ffffff;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: auto;
+  display: table
+}
+
+
+.search form {
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+}
+.search input {
+  width: 100%;
+  height: 42px;
+  padding-left: 10px;
+  border: 2px solid #FF7350;
+  border-radius: 5px;
+  outline: none;
+  background: #ffffff;
+}
+
+.search input::placeholder{
+  font-family: "Museo Sans Cyrl W03 300";
+  letter-spacing: 1px;
+  color: #9E9C9C;
+}
+
+.search button {
+  position: absolute; 
+  top: 0;
+  right: -15px;
+  width: 47px;
+  height: 47px;
+  border: none;
+  background: #FF7350;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+.search button:before {
+  content: "\2192";
+  font-family: FontAwesome;
+  font-size: 25px;
+  color: #F9F0DA;
+}
+
+table {
+  font-size: 14px;
+  max-width: 80%;
+  width: 80%;
+  border-collapse: collapse;
+  text-align: center;
+  margin: 20px auto;
+}
+
+th {
+  font-family: "Bebas Neue Regular";
+  font-size: 18px;
+  letter-spacing: 3px;
+  font-weight: normal;
+  color: #c4c4c9;
+  border-bottom: 2px solid #FF7350;
+  padding: 10px 8px;
+}
+
+td {
+  font-family: "Museo Sans Cyrl W03 300";
+  letter-spacing: 1px;
+  border-bottom: 1px solid #cc9d8e;
+  color: #c4c4c9;
+  padding: 22px 8px;
+  transition: .3s linear;
+}
+
+tr:hover td {
+  background: #4c545a;
+}
+
+.fa {
+  position: relative;
+  display: table-cell;
+  width: 60px;
+  height: 56px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 20px;
+  }
+  
+  
+  .main-menu:hover,
+  nav.main-menu.expanded {
+  width: 250px;
+  overflow: visible;
+  }
+  
+  .main-menu {
+  background: #25272d;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  width: 60px;
+  overflow: hidden;
+  z-index: 1000;
+  }
+
+  .main-menu img {
+    width: 38px;
+    height: 38px;
+    position: relative;
+    top: 20px;
+    left: 10px;
+    color:#FF7350;
+  }
+  
+  .main-menu > ul {
+  margin: 50px 0;
+  }
+  
+  .main-menu li {
+  position: relative;
+  display: block;
+  width: 250px;
+  }
+  
+  .main-menu li>a {
+  position: relative;
+  display: table;
+  border-collapse: collapse;
+  border-spacing: 0;
+  color: #c4c4c9;
+  font-size: 14px;
+  text-decoration: none;
+  transition: all .1s linear;
+  }
+  
+  .main-menu .nav-text {
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+  width: 190px;
+  font-family: "Museo Sans Cyrl W03 300";
+  letter-spacing: 1px;
+  }
+  
+  a:hover,a:focus {
+  text-decoration: none;
+  }
+  
+  nav {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  }
+  
+  nav ul,nav li {
+  outline: 0;
+  margin: 0;
+  padding: 0;
+  }
+
+  .main-menu li:hover>a,
+  nav.main-menu li.active>a {
+  color: #fff;
+  background-color: #353740;
+  }
+
+  .area {
+  float: left;
+  background: #e2e2e2;
+  width: 100%;
+  height: 100%;
+  }
+
+  .counter {
+  font-family: "Bebas Neue Regular";
+  font-size: 18px;
+  letter-spacing: 3px;
+  font-weight: normal;
+  color: #c4c4c9;
+  margin: 40px 150px;
+  }
+
+  .btn {
+    font-family: "Museo Sans Cyrl W03 300";
+    /* font-size: 18px; */
+    letter-spacing: 1px;
+    color: #c4c4c9;
+    background: #FF7350;
+    border-radius: 5px;
+    border: none; 
+  }
+
+  .btn:hover {
+    background: #c15134;
+    transition: .3s linear;
+  }
+
+

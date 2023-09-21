@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../static/css/login.css"/>
+    <link href="https://db.onlinewebfonts.com/c/38764ac6ef7cce3558484bb7e60b9af3?family=Bebas+Neue+Cyrillic" rel="stylesheet">
+    <link href="https://db.onlinewebfonts.com/c/4c6ae0b5133c55f46cc12ae0f2d43941?family=Bebas+Neue+Regular" rel="stylesheet">
+    <link href="https://db.onlinewebfonts.com/c/63105376024a2fbc44ff039a073cb853?family=Museo+Sans+Cyrl+W03+300" rel="stylesheet">
+    <title>Вход в систему</title>
+</head>
+<body>
+<div class="container">
+    <div class="form">
+<form action="/login" method="post">
+<h2>Вход в систему</h2>
+        <div class="input-box">
+            <ion-icon name="person-outline"></ion-icon>
+            <label> Логин: </label>
+            <input class = "input" type="text" name="login" required placeholder="Введите логин..."/>
+        </div>
+        <div class="input-box">
+            <ion-icon name="lock-closed-outline"></ion-icon>
+            <label> Пароль: </label>
+            <input class = "input" type="password" name="password" required placeholder="Введите пароль..."/> 
+        </div>
+        <div class="button">
+            <input type="submit" class="btn" value="Войти"/>
+        </div>
+    <div class="footer">
+        <span>
+            <a href="/registration">Вы не зарегистрированы?</a>
+        </span>
+    </div>
+    </form>
+    </div>
+    </div>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
